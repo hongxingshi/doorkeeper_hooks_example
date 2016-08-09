@@ -1,6 +1,6 @@
-# Example for hook the Doorkeeper::ApplicationMetalController of [doorkeeper](https://github.com/doorkeeper-gem/doorkeeper) 
+# Example for hook controller of [doorkeeper](https://github.com/doorkeeper-gem/doorkeeper) 
 
-Add the hook feature for [issue#]472(https://github.com/doorkeeper-gem/doorkeeper/issues/472)
+Add the hook feature for [issue\#]472(https://github.com/doorkeeper-gem/doorkeeper/issues/472)
 
 
 ## Install the doorkeeper
@@ -49,7 +49,7 @@ module DoorkeeperMethods
 end
 ```
 
-### Run on_load in `initializers/`:
+### Run on_load in `initializers/doorkeeper.rb`:
 
 ``` ruby
 ActiveSupport.on_load(:doorkeeper_metal_controller) do
@@ -58,7 +58,7 @@ ActiveSupport.on_load(:doorkeeper_metal_controller) do
 end
 ```
 
-### View the `spec/controllers/tokens_controller_spec.rb`:
+### Testcase: `spec/controllers/tokens_controller_spec.rb`:
 
 ``` ruby
 describe Doorkeeper::TokensController do
